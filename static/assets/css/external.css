@@ -1,0 +1,88 @@
+.col-lg-4 {
+    /* margin-left: px; */
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.col-button {
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    margin-left: 350px;
+    margin-top: 300px;
+
+    color: rgb(8, 5, 5);
+    font-family: var(--bs-font-sans-serif);
+    border-radius: 12px;
+    padding: 16px 32px;
+    color: white;
+    border-color: #2196F3;
+    background-color: rgb(59, 144, 230);
+    font-family: 'Roboto';
+}
+
+.based-on {
+    align-items: center;
+
+}
+
+#container {
+    margin-left: -200px;
+    margin-right: -200px;
+}
+
+.col-lg-4 {
+    margin-left: 50px;
+}
+
+#pricing {
+    margin-left: 200px;
+}
+
+/* waring message flow  */
+#warning-message-container {
+    position:absolute;
+    top: 30px;
+   right: 600px;
+    /* width: 100%; */
+    margin-top: 80px;
+    
+
+}
+
+/* Styles for the warning message */
+#warning-message {
+    
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap;
+    animation: slideLeft 8s linear infinite;
+    /* Animation to slide from right to left, loop indefinitely */
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(50%);
+        /* Start from the right side */
+    }
+
+    100% {
+        transform: translateX(-25%);
+        /* Move to the left side */
+    }
+}
+
+#warning-para {
+    color: red;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* not choose  file means   */
+span {
+    color: red;
+    display: none;
+}
+
+

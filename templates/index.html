@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Oral Disease Detection" />
+    <meta name="author" content="Mini-Project Team" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Oral Disease Detection</title>
+    <link
+      href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='assets/css/templatemo-chain-app-dev.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='assets/css/animated.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='assets/css/owl.css')}}"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background: #f4f4f4;
+        color: #333;
+      }
+      h2,
+      h4 {
+        color: #007bff;
+      }
+      .main-banner {
+        background: #007bff;
+        color: #fff;
+        padding: 50px 0;
+        text-align: center;
+      }
+      .main-banner h2,
+      .main-banner p {
+        color: #fff;
+      }
+      .pricing-item-regular {
+        background: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 15px 0;
+      }
+      .pricing-item-regular img {
+        max-width: 60px;
+        margin-bottom: 5px;
+      }
+      .pricing-item-regular p {
+        color: #000;
+      }
+      .section-heading {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .section-heading p {
+        color: #000;
+      }
+      footer {
+        background: #007bff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer p,
+      footer h4 {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: column; flex-wrap: wrap">
+      <header class="header-sticky" style="height: auto">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container">
+            <h2 class="navbar-brand">Oral Diseases Detection</h2>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/prediction">Prediction</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/symptoms">Symptoms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="main-banner">
+        <h2>Oral Diseases</h2>
+        <p>
+          Predicting oral diseases and ensuring healthy teeth using Deep
+          Learning.
+        </p>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="section-heading">
+        <h4>Our Services</h4>
+        <p>Every tooth in a Human's head is more valuable than a diamond.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pricing-item-regular text-center">
+            <img
+              src="{{url_for('static',filename='assets/images/dental caries.png')}}"
+              alt="Dental Caries"
+            />
+            <h4>Dental Caries</h4>
+            <p>
+              Dental caries, commonly known as tooth decay, is a prevalent oral
+              disease characterized by the demineralization of tooth enamel and
+              the formation of cavities.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pricing-item-regular text-center">
+            <img
+              src="{{url_for('static',filename='assets/images/gingivities.png')}}"
+              alt="Gingivitis"
+            />
+            <h4>Gingivitis</h4>
+            <p>
+              Gingivitis refers to inflammation of the gums caused by bacterial
+              infection. Early detection is crucial to prevent progression to
+              severe periodontal diseases.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pricing-item-regular text-center">
+            <img
+              src="{{url_for('static',filename='assets/images/mouth ul.png')}}"
+              alt="Mouth Ulcers"
+            />
+            <h4>Mouth Ulcers</h4>
+            <p>
+              Mouth ulcers are painful sores that develop on the mucous
+              membranes of the oral cavity. Causes include viral infections,
+              trauma, or autoimmune conditions.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pricing-item-regular text-center">
+            <img
+              src="{{url_for('static',filename='assets/images/tooth discolaration.png')}}"
+              alt="Tooth Discoloration"
+            />
+            <h4>Tooth Discoloration</h4>
+            <p>
+              Tooth discoloration encompasses changes in the color of the tooth
+              enamel, which can result from extrinsic factors (e.g., foods,
+              beverages) or intrinsic factors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="about">
+      <div class="container" style="cursor: pointer;">
+        <h4>About</h4>
+        <p>
+          Oral diseases often go undetected, leading to serious health
+          implications. We propose a deep learning approach for oral disease
+          detection using intraoral images, achieving a 94.6% accuracy rate. Our
+          platform aids healthcare professionals and individuals alike in
+          combating oral diseases.
+        </p>
+        <h4 style="font-size: 24px; margin: 20px 0 15px">Team Members</h4>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            color: #fff;
+            flex-wrap: wrap;
+          "
+        >
+          <div
+            style="
+              background: #007bff;
+              padding: 15px;
+              border-radius: 8px;
+              width: 100%;
+              max-width: 250px;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+              text-align: center;
+            "
+          >
+            <img
+              src="{{url_for('static',filename='team/photo-4.jpg')}}"
+              alt="Balaji Pichchika"
+              style="
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 10px 0;
+              "
+            /><br />
+            <strong>Balaji Pichchika</strong> - CSE<br />
+            <a href="mailto:balajipicchika02@gmail.com" style="color: #fff"
+              >balajipicchika02@gmail.com</a
+            >
+          </div>
+          <div
+            style="
+              background: #007bff;
+              padding: 15px;
+              border-radius: 8px;
+              width: 100%;
+              max-width: 250px;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+              text-align: center;
+            "
+          >
+            <img
+              src="{{url_for('static',filename='team/photo-3.jpeg')}}"
+              alt="Teammate 1"
+              style="
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 10px 0;
+              "
+            /><br />
+            <strong>Tirumala U S S Naga Laxmi Durga Devi</strong> - CSE<br />
+            <a href="mailto:ussnlddevi@gmail.com" style="color: #fff"
+              >ussnlddevi@gmail.com</a
+            >
+          </div>
+          <div
+            style="
+              background: #007bff;
+              padding: 15px;
+              border-radius: 8px;
+              width: 100%;
+              max-width: 250px;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+              text-align: center;
+            "
+          >
+            <img
+              src="{{url_for('static',filename='team/photo-1.jpg')}}"
+              alt="Teammate 2"
+              style="
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 10px 0;
+              "
+            /><br />
+            <strong>Yegireddi Eswari</strong> - CSE<br />
+            <a href="mailto:eswariyegireddi@gmail.com" style="color: #fff"
+              >eswariyegireddi@gmail.com</a
+            >
+          </div>
+          <div
+            style="
+              background: #007bff;
+              padding: 15px;
+              border-radius: 8px;
+              width: 100%;
+              max-width: 250px;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+              text-align: center;
+            "
+          >
+            <img
+              src="{{url_for('static',filename='team/photo-2.jpeg')}}"
+              alt="Teammate 3"
+              style="
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 10px 0;
+              "
+            />
+            <br />
+            <strong>Prasad Rajana</strong> - CSE<br />
+            <a href="mailto:rajanaprasad2004@gmail.com" style="color: #fff"
+              >rajanaprasad2004@gmail.com</a
+            >
+          </div>
+          <div
+            style="
+              background: #007bff;
+              padding: 15px;
+              border-radius: 8px;
+              width: 100%;
+              max-width: 250px;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+              text-align: center;
+            "
+          >
+            <img
+              src="{{url_for('static',filename='team/photo-5.jpeg')}}"
+              alt="Teammate 3"
+              style="
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 10px 0;
+              "
+            />
+            <br />
+            <strong>Jagadeesh Gadi</strong> - CSE<br />
+            <a href="mailto:jagadeeshgadi844@gmail.com" style="color: #fff"
+              >jagadeeshgadi844@gmail.com</a>
+          </div>
+        </div>
+        <p style="margin-top: 30px">&copy; 2024 Mini-Project Team Batch-C1</p>
+      </div>
+    </footer>
+
+    <script src="{{url_for('static',filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/custom.js')}}"></script>
+  </body>
+</html>
